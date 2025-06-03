@@ -22,7 +22,7 @@ class EmployeeController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return JsonResponse
      */
     public function index(): JsonResponse
     {
@@ -33,8 +33,8 @@ class EmployeeController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return JsonResponse
      */
     public function store(Request $request): JsonResponse
     {
@@ -61,8 +61,8 @@ class EmployeeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param Employee $employee
+     * @return JsonResponse
      */
     public function show(Employee $employee): JsonResponse
     {
@@ -72,9 +72,9 @@ class EmployeeController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @param Employee $employee
+     * @return JsonResponse
      */
     public function update(Request $request, Employee $employee): JsonResponse
     {
@@ -101,8 +101,8 @@ class EmployeeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param Employee $employee
+     * @return JsonResponse
      */
     public function destroy(Employee $employee): JsonResponse
     {

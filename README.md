@@ -4,6 +4,8 @@
 
 REST API do zarządzania firmami oraz ich pracownikami. Pozwala na pełny CRUD dla obu encji. Pracownicy są powiązani z firmą przez pole `company_id`.
 
+W katalogu `/requests` znajdują się przykładowe pliki do testowania API w PHPStorm. Każdy plik zawiera gotowe wywołania HTTP z przykładami danych.
+
 ## Wymagania
 - PHP >= 8.0
 - Composer
@@ -81,7 +83,33 @@ REST API do zarządzania firmami oraz ich pracownikami. Pozwala na pełny CRUD d
 - Walidacja danych po stronie backendu
 
 ## Testowanie
-Możesz testować API np. za pomocą Postman, Insomnia lub curl.
+Możesz testować API na kilka sposobów:
+
+### PHPStorm
+W katalogu `requests/` znajdują się gotowe pliki do testowania API w PHPStorm:
+- `companies/` - przykłady wywołań dla endpointów firm
+  - `list.http` - pobieranie listy firm
+  - `get.http` - pobieranie pojedynczej firmy
+  - `create.http` - tworzenie firm
+  - `update.http` - aktualizacja firm
+  - `delete.http` - usuwanie firm
+- `employees/` - przykłady wywołań dla endpointów pracowników
+  - `list.http` - pobieranie listy pracowników
+  - `get.http` - pobieranie pojedynczego pracownika
+  - `create.http` - tworzenie pracowników
+  - `update.http` - aktualizacja pracowników
+  - `delete.http` - usuwanie pracowników
+
+Aby użyć tych plików w PHPStorm:
+1. Otwórz dowolny plik `.http`
+2. Kliknij zielony przycisk "Run" obok wybranego wywołania
+3. Upewnij się, że zmienna `{{host}}` jest ustawiona na adres Twojego API (np. `http://localhost:8000`)
+
+### Inne narzędzia
+Możesz również testować API za pomocą:
+- Postman
+- Insomnia
+- curl
 
 ---
 
