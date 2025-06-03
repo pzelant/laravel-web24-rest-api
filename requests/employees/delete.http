@@ -1,0 +1,14 @@
+### Usuń pracownika
+DELETE {{host}}/api/employees/1
+Content-Type: application/json
+Accept: application/json
+
+### Usuń pracownika z potwierdzeniem
+DELETE {{host}}/api/employees/1?confirm=true
+Content-Type: application/json
+Accept: application/json
+
+### Usuń pracownika z zachowaniem historii
+DELETE {{host}}/api/employees/1?preserve_history=true
+Content-Type: application/json
+Accept: application/json 

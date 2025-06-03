@@ -1,0 +1,41 @@
+### Aktualizuj firmę (podstawowe dane)
+PUT {{host}}/api/companies/1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Zaktualizowana Firma Sp. z o.o.",
+    "nip": "1234567890",
+    "address": "ul. Nowa 456",
+    "city": "Kraków",
+    "postal_code": "30-001",
+    "country": "PL"
+}
+
+### Aktualizuj firmę (częściowa aktualizacja)
+PATCH {{host}}/api/companies/1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Nowa Nazwa Firmy",
+    "phone": "+48123456789"
+}
+
+### Aktualizuj firmę (pełne dane)
+PUT {{host}}/api/companies/1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Kompletnie Zaktualizowana Firma",
+    "nip": "9876543210",
+    "address": "ul. Nowa 789",
+    "city": "Wrocław",
+    "postal_code": "50-001",
+    "country": "PL",
+    "phone": "+48123456789",
+    "email": "nowy@firma.pl",
+    "website": "https://nowa-firma.pl",
+    "description": "Zaktualizowany opis firmy"
+} 

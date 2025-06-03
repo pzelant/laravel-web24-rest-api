@@ -1,0 +1,19 @@
+### Pobierz pracownika o ID 1
+GET {{host}}/api/employees/1
+Content-Type: application/json
+Accept: application/json
+
+### Pobierz pracownika o ID 1 z relacjami
+GET {{host}}/api/employees/1?include=company
+Content-Type: application/json
+Accept: application/json
+
+### Pobierz pracownika o ID 1 z wybranymi polami
+GET {{host}}/api/employees/1?fields=first_name,last_name,email,position
+Content-Type: application/json
+Accept: application/json
+
+### Pobierz pracowników konkretnej firmy
+GET {{host}}/api/companies/1/employees
+Content-Type: application/json
+Accept: application/json 

@@ -1,0 +1,53 @@
+### Utwórz nowego pracownika (podstawowe dane)
+POST {{host}}/api/employees
+Content-Type: application/json
+Accept: application/json
+
+{
+    "company_id": 1,
+    "first_name": "Jan",
+    "last_name": "Kowalski",
+    "email": "jan.kowalski@example.com",
+    "phone": "+48123456789",
+    "position": "Programista",
+    "department": "IT"
+}
+
+### Utwórz nowego pracownika (pełne dane)
+POST {{host}}/api/employees
+Content-Type: application/json
+Accept: application/json
+
+{
+    "company_id": 1,
+    "first_name": "Anna",
+    "last_name": "Nowak",
+    "email": "anna.nowak@example.com",
+    "phone": "+48987654321",
+    "position": "Starszy Programista",
+    "department": "IT",
+    "hire_date": "2024-01-01",
+    "salary": 10000,
+    "address": "ul. Pracownicza 123",
+    "city": "Warszawa",
+    "postal_code": "00-001",
+    "country": "PL",
+    "birth_date": "1990-01-01",
+    "emergency_contact": {
+        "name": "Jan Nowak",
+        "phone": "+48111222333",
+        "relationship": "Mąż"
+    }
+}
+
+### Utwórz nowego pracownika (minimalne dane)
+POST {{host}}/api/employees
+Content-Type: application/json
+Accept: application/json
+
+{
+    "company_id": 1,
+    "first_name": "Piotr",
+    "last_name": "Wiśniewski",
+    "email": "piotr.wisniewski@example.com"
+}

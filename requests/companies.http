@@ -1,0 +1,42 @@
+### Pobierz wszystkie firmy
+GET {{host}}/api/companies
+Content-Type: application/json
+Accept: application/json
+
+### Pobierz konkretną firmę
+GET {{host}}/api/companies/1
+Content-Type: application/json
+Accept: application/json
+
+### Utwórz nową firmę
+POST {{host}}/api/companies
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Przykładowa Firma Sp. z o.o.",
+    "nip": "1234567890",
+    "address": "ul. Przykładowa 123",
+    "city": "Warszawa",
+    "postal_code": "00-001",
+    "country": "PL"
+}
+
+### Aktualizuj firmę
+PUT {{host}}/api/companies/1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Zaktualizowana Firma Sp. z o.o.",
+    "nip": "1234567890",
+    "address": "ul. Nowa 456",
+    "city": "Kraków",
+    "postal_code": "30-001",
+    "country": "PL"
+}
+
+### Usuń firmę
+DELETE {{host}}/api/companies/1
+Content-Type: application/json
+Accept: application/json 

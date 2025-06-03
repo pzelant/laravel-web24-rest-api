@@ -1,0 +1,51 @@
+### Aktualizuj pracownika (podstawowe dane)
+PUT {{host}}/api/employees/1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "company_id": 1,
+    "first_name": "Jan",
+    "last_name": "Kowalski",
+    "email": "jan.kowalski@example.com",
+    "phone": "+48123456789",
+    "position": "Starszy Programista",
+    "department": "IT"
+}
+
+### Aktualizuj pracownika (częściowa aktualizacja)
+PATCH {{host}}/api/employees/1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "position": "Lead Developer",
+    "salary": 15000
+}
+
+### Aktualizuj pracownika (pełne dane)
+PUT {{host}}/api/employees/1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "company_id": 1,
+    "first_name": "Jan",
+    "last_name": "Kowalski",
+    "email": "jan.kowalski@example.com",
+    "phone": "+48123456789",
+    "position": "Lead Developer",
+    "department": "IT",
+    "hire_date": "2023-01-01",
+    "salary": 15000,
+    "address": "ul. Nowa 456",
+    "city": "Warszawa",
+    "postal_code": "00-002",
+    "country": "PL",
+    "birth_date": "1985-01-01",
+    "emergency_contact": {
+        "name": "Maria Kowalska",
+        "phone": "+48444555666",
+        "relationship": "Żona"
+    }
+} 

@@ -1,0 +1,14 @@
+### Usuń firmę
+DELETE {{host}}/api/companies/1
+Content-Type: application/json
+Accept: application/json
+
+### Usuń firmę z potwierdzeniem
+DELETE {{host}}/api/companies/1?confirm=true
+Content-Type: application/json
+Accept: application/json
+
+### Usuń firmę z zachowaniem powiązanych danych
+DELETE {{host}}/api/companies/1?preserve_relations=true
+Content-Type: application/json
+Accept: application/json 

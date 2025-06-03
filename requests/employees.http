@@ -1,0 +1,49 @@
+### Pobierz wszystkich pracowników
+GET {{host}}/api/employees
+Content-Type: application/json
+Accept: application/json
+
+### Pobierz konkretnego pracownika
+GET {{host}}/api/employees/1
+Content-Type: application/json
+Accept: application/json
+
+### Pobierz pracowników konkretnej firmy
+GET {{host}}/api/companies/1/employees
+Content-Type: application/json
+Accept: application/json
+
+### Utwórz nowego pracownika
+POST {{host}}/api/employees
+Content-Type: application/json
+Accept: application/json
+
+{
+    "company_id": 1,
+    "first_name": "Jan",
+    "last_name": "Kowalski",
+    "email": "jan.kowalski@example.com",
+    "phone": "+48123456789",
+    "position": "Programista",
+    "department": "IT"
+}
+
+### Aktualizuj pracownika
+PUT {{host}}/api/employees/1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "company_id": 1,
+    "first_name": "Jan",
+    "last_name": "Kowalski",
+    "email": "jan.kowalski@example.com",
+    "phone": "+48123456789",
+    "position": "Starszy Programista",
+    "department": "IT"
+}
+
+### Usuń pracownika
+DELETE {{host}}/api/employees/1
+Content-Type: application/json
+Accept: application/json 

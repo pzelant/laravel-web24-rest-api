@@ -1,0 +1,19 @@
+### Pobierz wszystkie firmy
+GET {{host}}/api/companies
+Content-Type: application/json
+Accept: application/json
+
+### Pobierz wszystkie firmy z paginacją
+GET {{host}}/api/companies?page=1&per_page=10
+Content-Type: application/json
+Accept: application/json
+
+### Pobierz wszystkie firmy z sortowaniem
+GET {{host}}/api/companies?sort=name&order=desc
+Content-Type: application/json
+Accept: application/json
+
+### Pobierz wszystkie firmy z filtrowaniem
+GET {{host}}/api/companies?city=Warszawa
+Content-Type: application/json
+Accept: application/json 

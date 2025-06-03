@@ -1,0 +1,42 @@
+### Utwórz nową firmę (podstawowe dane)
+POST {{host}}/api/companies
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Przykładowa Firma Sp. z o.o.",
+    "nip": "1234567890",
+    "address": "ul. Przykładowa 123",
+    "city": "Warszawa",
+    "postal_code": "00-001",
+    "country": "PL"
+}
+
+### Utwórz nową firmę (pełne dane)
+POST {{host}}/api/companies
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Rozbudowana Firma Sp. z o.o.",
+    "nip": "9876543210",
+    "address": "ul. Rozbudowana 456",
+    "city": "Kraków",
+    "postal_code": "30-001",
+    "country": "PL",
+    "phone": "+48123456789",
+    "email": "kontakt@firma.pl",
+    "website": "https://firma.pl",
+    "description": "Firma zajmująca się programowaniem"
+}
+
+### Utwórz nową firmę (minimalne dane)
+POST {{host}}/api/companies
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Minimalna Firma",
+    "nip": "1112223334",
+    "city": "Poznań"
+} 

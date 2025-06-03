@@ -1,0 +1,14 @@
+### Pobierz firmę o ID 1
+GET {{host}}/api/companies/1
+Content-Type: application/json
+Accept: application/json
+
+### Pobierz firmę o ID 1 z relacjami
+GET {{host}}/api/companies/1?include=employees
+Content-Type: application/json
+Accept: application/json
+
+### Pobierz firmę o ID 1 z wybranymi polami
+GET {{host}}/api/companies/1?fields=name,nip,address
+Content-Type: application/json
+Accept: application/json 
